@@ -17,3 +17,7 @@ ay = [0.70,0.74,0.94,0.79,1.34,1.05,1.78,1.33,1.87,1.49,1.31];
  fun = @(x) polyval(coeff,x);
  fplot(nestedForm,[-0.1,5.1]);hold on;fplot(fun,[-0.1,5.1]);hold off
  
+ ## answer for the last part :
+ ## according to the deviation 0.04 the general behavior of the functions are almost the same , so we can conculde from that even with
+ ## some noised we still can calculate the real function
+ 
