@@ -2,15 +2,6 @@
 
 f = @(x) cos(2*x)/(3 + 2*sin (x));
 
-
-
-k = 6;
-[ca,cb] = FourierCoef(f,k);
-
-check = @(x) ca(1)/2 + ca(2)*cos(x) + cb(1)*sin(x) + ca(3)*cos(2*x)+ cb(2)*sin(2*x)+ ca(4)*cos(3*x)+ cb(3)*sin(3*x);
-check = check(2);
-
-
 [ca1,cb1] = FourierCoef(f,1);
 [ca2,cb2] = FourierCoef(f,2);
 [ca3,cb3] = FourierCoef(f,3);
