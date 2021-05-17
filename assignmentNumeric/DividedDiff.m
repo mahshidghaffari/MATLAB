@@ -14,8 +14,8 @@ function px = DividedDiff (x,y);
  
  ## using the divided diffrence for caculates other cols
  rowReduce =  columns(x)-1;
- for (a=3 : columns(x)+1);  % a = numbers of col
-   for(b=1 : rowReduce); % b = number of row
+ for (a=3 : columns(x)+1);  # a = numbers of col
+   for(b=1 : rowReduce); # b = number of row
    px(b,a) = fxx(b,a,px,space);
   endfor
   space = space+1;
