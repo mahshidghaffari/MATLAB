@@ -23,8 +23,3 @@ Error3 = Simpson(-pi,pi,@(x) (f(x)-SF3(x))^2)
 Error4 = Simpson(-pi,pi,@(x) (f(x)-SF4(x))^2)
 Error5 = Simpson(-pi,pi,@(x) (f(x)-SF5(x))^2)
 Error6 = Simpson(-pi,pi,@(x) (f(x)-SF6(x))^2)
-
-
-
-
-
