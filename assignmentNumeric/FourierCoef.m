@@ -13,4 +13,4 @@ function [ca,cb] = FourierCoef (f, n)
     
   end
   
-endfunction
+end
