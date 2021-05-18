@@ -1,10 +1,12 @@
-## Author: Mah <mah@HP>
-## Created: 2021-05-17
+%% Author: Mah <mah@HP>
+%% Created: 2021-05-17
 
-function SimpsonAns = Simpson (a,b,f);
+function SimpsonAns = Simpson (a,b,f)
   n=40;
   h = (b-a)/n;
-  
+  x = zeros (1,n+1);
+  y = zeros (1,n+1);
+  sy = zeros (1,n+1);
   for i = 1:n+1 
     x(i) = a + (i-1)*h;
     y(i) = f(x(i));
@@ -20,4 +22,4 @@ function SimpsonAns = Simpson (a,b,f);
   end
   
  SimpsonAns  = sum( sy ) * (h/3);
-endfunction
+end
